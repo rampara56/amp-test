@@ -1,0 +1,123 @@
+  <!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello scriptbees</title>
+    <link rel="canonical" href="http://localhost/AMP/non-amp.html" />
+    
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-access" src="https://cdn.ampproject.org/v0/amp-access-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <amp-sidebar id='sidebar1' layout='nodisplay'>
+  <ul>
+    <li> Home </li>
+    <li> Page1 </li>
+    <li> Page2 </li>
+    <li on="tap:sidebar1.close"> Close</li>
+  </ul>
+</amp-sidebar>
+    <script id="amp-access" type="application/json">
+      {
+        "authorization": "https://ampbyexample.com/samples_templates/comment_section/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM",
+        "noPingback": "true",
+        "login": {
+          "sign-in": "https://ampbyexample.com/samples_templates/comment_section/login?rid=READER_ID&url=CANONICAL_URL",
+          "sign-out": "https://ampbyexample.com/samples_templates/comment_section/logout"
+        },
+        "authorizationFallbackResponse": {
+          "error": true,
+          "loggedIn": false
+        }
+      }
+    </script>
+
+
+    <style amp-custom>
+        /* any custom style goes here */
+        body {
+          background-color:powderblue;
+            }
+      
+        h1 {
+         margin-left: 20%; margin-right: 20%;
+          }
+        
+        amp-img {
+          background-color: gray;
+          border: 1px solid black;
+          margin-left: 20%;
+          margin-right: 20%;
+
+          
+              }
+            h2{ margin-left: 20%; }
+
+          amp-anim{ margin-left: 20%; background-color: powderblue; }
+          amp-iframe{ margin-left: 20%; margin-right: 20% }
+          amp-youtube{margin-left: 20%; margin-right: 20%; width: 480; height: 270}
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+    
+  </head>
+
+  <body>
+    <h1>Welcome to the demo of Accelerated Mobile Pages</h1>
+    <amp-img src="img/img1.jpg" alt="Welcome" height="400" width="770"></amp-img>
+    <h2>How are you...</h2>
+    <amp-anim width="300" height="250" src="img/comp.gif">
+        <amp-img placeholder width="100" height="70" src="img/comp.gif">
+        </amp-img>
+    </amp-anim>
+    <h2>Embed giphy...using I-frame</h2>
+    <amp-iframe width="600"
+      height="400"
+      layout="responsive"
+      sandbox="allow-scripts allow-same-origin allow-popups"
+      frameborder="0"
+      src="https://giphy.com/embed/DKG1OhBUmxL4Q">
+  </amp-iframe>
+  <h1>Here the add was></h1>
+  <amp-ad width="300"
+      height="250"
+      type="a9"
+      data-aax_size="300x250"
+      data-aax_pubname="test123"
+      data-aax_src="302">
+    </amp-ad>
+  <h2>Here the amp i frame video</h2>
+  <amp-iframe width="500"
+      height="281"
+      layout="responsive"
+      sandbox="allow-scripts allow-same-origin allow-popups"
+      allowfullscreen
+      frameborder="0"
+      src="https://player.vimeo.com/video/140261016">
+  </amp-iframe>
+  <h2>Include any you-tube video....</h2>
+  <amp-youtube 
+    data-videoid="w4iHhY4LqGU"
+    layout="responsive"
+    width="480" height="270" margin-bottom="100">
+  </amp-youtube>
+  <br><br>
+  </body>
+</html>
